@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220621 15:19:09.472" rpa="false" schemaversion="3">
+<suite id="s1" name="Alert" source="C:\Users\islam_yassin\PycharmProjects\Automation\TestCases\alert.robot">
+<test id="s1-t1" name="AlertandFrame" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220621 15:19:10.302" level="INFO">Opening browser 'chrome' to base url 'https://stage-maxim.transim.com/Loader/New.aspx'.</msg>
+<status status="PASS" starttime="20220621 15:19:10.302" endtime="20220621 15:19:28.017"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220621 15:19:28.017" endtime="20220621 15:19:28.159"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>4seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20220621 15:19:28.160" endtime="20220621 15:19:28.160"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>IsolatedOpt</arg>
+<arg>IsolatedYes</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220621 15:19:28.160" level="INFO">Selecting 'IsolatedYes' from radio button 'IsolatedOpt'.</msg>
+<status status="PASS" starttime="20220621 15:19:28.160" endtime="20220621 15:19:28.308"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="landing_main"]/div[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220621 15:19:28.309" level="INFO">Clicking element 'xpath://*[@id="landing_main"]/div[3]/a'.</msg>
+<status status="PASS" starttime="20220621 15:19:28.309" endtime="20220621 15:19:28.466"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>searchPartsIsoIframe</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20220621 15:19:28.468" level="INFO">Selecting frame 'searchPartsIsoIframe'.</msg>
+<status status="PASS" starttime="20220621 15:19:28.466" endtime="20220621 15:19:31.574"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>MAX17690</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220621 15:19:31.576" level="INFO">Clicking link 'MAX17690'.</msg>
+<status status="PASS" starttime="20220621 15:19:31.575" endtime="20220621 15:19:31.877"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Proceed</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220621 15:19:31.878" level="INFO">Clicking button 'Proceed'.</msg>
+<status status="PASS" starttime="20220621 15:19:31.877" endtime="20220621 15:19:36.515"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Maxim EE-SIM :: Login</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220621 15:19:36.522" level="INFO">Page title is 'Maxim EE-SIM :: Login'.</msg>
+<status status="PASS" starttime="20220621 15:19:36.516" endtime="20220621 15:19:36.522"/>
+</kw>
+<status status="PASS" starttime="20220621 15:19:10.301" endtime="20220621 15:19:36.523"/>
+</test>
+<status status="PASS" starttime="20220621 15:19:09.478" endtime="20220621 15:19:36.527"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Alert">Alert</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
